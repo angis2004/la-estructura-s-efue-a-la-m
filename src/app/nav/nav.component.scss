@@ -1,0 +1,45 @@
+
+
+/* Theme Toggler */
+
+/* Asegúrate de que el selector de tema esté visible */
+.theme-toggle {
+    position: relative;
+    text-align: center;
+    z-index: 10;
+    background-color: var(--bs-body-color);
+    border: none;
+}
+
+/* Ajustes para el modo oscuro */
+html[data-bs-theme="dark"] .theme-toggle .fa-sun,
+html[data-bs-theme="dark"] .theme-toggle .fa-moon {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.25rem;
+    color: #FFF;
+}
+
+html[data-bs-theme="dark"] .theme-toggle .fa-sun {
+    display: none;
+}
+
+html[data-bs-theme="light"] .theme-toggle .fa-moon {
+    display: none;
+}
+
+/* Ajustes para el modo claro */
+html[data-bs-theme="light"] .theme-toggle .fa-sun {
+    display: none;
+}
+
+html[data-bs-theme="light"] .theme-toggle .fa-moon {
+    display: block;
+}
+
+/* Asegúrate de que los íconos se muestren correctamente */
+.theme-icon {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.25rem;
+}
